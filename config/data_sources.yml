@@ -12,22 +12,25 @@ sources:
     kind: origin_destination_survey
     catalog: https://datosabiertos.metropol.gov.co/dataset/encuesta-origen-destino-2017-datos-por-viajes
     required: true
-    discovery: html_resource_links
-    notes: AMVA open-data page; notebook discovers machine-readable files.
+    discovery: dcat_json_with_direct_fallback
+    url: https://datosabiertos.metropol.gov.co/sites/default/files/uploaded_resources/EOD_2017_DatosViajes_1_0.csv
+    notes: Official AMVA CSV; catalog metadata is checked before using the pinned fallback.
 
   medellin_eod_people:
     city: Medellin
     kind: origin_destination_survey
     catalog: https://datosabiertos.metropol.gov.co/dataset/encuesta-origen-destino-2017-datos-por-moradores
     required: true
-    discovery: html_resource_links
+    discovery: dcat_json_with_direct_fallback
+    url: https://datosabiertos.metropol.gov.co/sites/default/files/uploaded_resources/EOD_2017_DatosMoradores_0.csv
 
   medellin_eod_households:
     city: Medellin
     kind: origin_destination_survey
     catalog: https://datosabiertos.metropol.gov.co/dataset/encuesta-origen-destino-2017-datos-por-hogares
     required: true
-    discovery: html_resource_links
+    discovery: dcat_json_with_direct_fallback
+    url: https://datosabiertos.metropol.gov.co/sites/default/files/uploaded_resources/EOD_2017_DatosHogares.csv
 
   medellin_gtfs_catalog:
     city: Medellin
