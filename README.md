@@ -1,10 +1,10 @@
 # Stochastic Accessibility in Colombian Cities
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/00_data_audit_and_pilot.ipynb)
+[![Data gate](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/00_data_audit_and_pilot.ipynb)
+[![Schema gate](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/01_bogota_2023_schema_gate.ipynb)
 
-Reproducible pilot for studying stochastic accessibility, first-passage times,
-and socioeconomic inequality in the multimodal transport networks of Bogotá
-and Medellín.
+Reproducible project for studying stochastic accessibility, first-passage
+times, and socioeconomic inequality in Colombian multimodal transport networks.
 
 ## Research question
 
@@ -12,24 +12,27 @@ How do conclusions about access to essential services change when route
 uncertainty, transfers, and the full first-passage-time distribution are
 considered instead of only shortest paths?
 
-This repository starts with a data audit and a small reproducible pilot. It
-uses public data only; smart-card records, mobile-phone traces, Waze history,
-and institutional agreements are not required.
+## Study design
 
-## Quick start in Google Colab
+Bogotá is the primary inferential case because its 2023 Mobility Survey
+publishes row-level household, person, trip, stage, weight, and zoning data.
+Medellín is retained as an external validation case using recent EOD 2025
+macrozone results, current network information, and 2017 microdata only for
+clearly labeled auxiliary analyses.
 
-Open [`notebooks/00_data_audit_and_pilot.ipynb`](notebooks/00_data_audit_and_pilot.ipynb)
-in Colab and run the cells in order. The notebook:
+The project uses public data only; smart-card records, mobile-phone traces,
+Waze history, and institutional agreements are not required for the core paper.
 
-1. installs the geospatial dependencies;
-2. downloads and validates the current Bogotá GTFS feed;
-3. discovers downloadable AMVA origin-destination resources;
-4. builds small walking-network pilots from OpenStreetMap;
-5. computes first-passage and accessibility-inequality diagnostics;
-6. records checksums and a data manifest.
+## Notebooks
 
-Large source files are written under `data/` and intentionally excluded from
-Git. Each run records URLs, timestamps, file sizes, and SHA-256 hashes.
+1. **00_data_audit_and_pilot.ipynb** validates the initial public sources,
+   builds two small OSM networks, and tests the first-passage machinery.
+2. **01_bogota_2023_schema_gate.ipynb** downloads the Bogotá 2023 processed
+   survey and zoning packages, inventories their contents, detects candidate
+   keys and scientific variables, and evaluates analytical Gate 2.
+
+Large source files are written under data/ and intentionally excluded from Git.
+Each run records URLs, timestamps, file sizes, and SHA-256 hashes.
 
 ## Repository layout
 
@@ -52,10 +55,9 @@ python -m pytest -q
 
 ## Current scope
 
-The pilot estimates *potential stochastic accessibility*. It does not claim
+The project estimates *potential stochastic accessibility*. It does not claim
 to reconstruct individual trajectories, real-time congestion, or causal
-effects of infrastructure. Those require additional data or a stronger
-identification design.
+infrastructure effects.
 
 ## License
 
