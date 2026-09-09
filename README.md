@@ -2,6 +2,7 @@
 
 [![Data gate](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/00_data_audit_and_pilot.ipynb)
 [![Schema gate](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/01_bogota_2023_schema_gate.ipynb)
+[![Relational OD gate](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/02_bogota_2023_relational_od_gate.ipynb)
 
 Reproducible project for studying stochastic accessibility, first-passage
 times, and socioeconomic inequality in Colombian multimodal transport networks.
@@ -28,8 +29,11 @@ Waze history, and institutional agreements are not required for the core paper.
 1. **00_data_audit_and_pilot.ipynb** validates the initial public sources,
    builds two small OSM networks, and tests the first-passage machinery.
 2. **01_bogota_2023_schema_gate.ipynb** downloads the Bogotá 2023 processed
-   survey and zoning packages, inventories their contents, detects candidate
-   keys and scientific variables, and evaluates analytical Gate 2.
+   survey and zoning packages, inventories their contents, confirms the
+   published relational keys, and evaluates analytical Gate 2.
+3. **02_bogota_2023_relational_od_gate.ipynb** measures full-table key
+   cardinalities and join/spatial coverage, then builds weighted ZAT-level OD
+   matrices for the study region and Bogotá-internal trips (Gate 3).
 
 Large source files are written under data/ and intentionally excluded from Git.
 Each run records URLs, timestamps, file sizes, and SHA-256 hashes.
