@@ -7,20 +7,44 @@ sources:
     required: true
     notes: Official SIMUR feed; pin a dated snapshot for reproducibility.
 
+  bogota_em2023_processed:
+    city: Bogota
+    kind: origin_destination_survey
+    catalog: https://observatorio.movilidadbogota.gov.co/publicaciones/resultados/encuesta-de-movilidad-2023
+    url: https://observatorio.movilidadbogota.gov.co/sites/default/files/2025-09/05_Base%20datos%20procesada%20EODH.zip
+    required: true
+    notes: Processed household, vehicle, person, trip, and stage modules.
+
+  bogota_em2023_zoning:
+    city: Bogota
+    kind: survey_zoning
+    catalog: https://observatorio.movilidadbogota.gov.co/publicaciones/resultados/encuesta-de-movilidad-2023
+    url: https://observatorio.movilidadbogota.gov.co/sites/default/files/2025-09/03_Zonificacion%20EODH%20%281%29.zip
+    required: true
+    notes: Official UTAM and ZAT spatial layers.
+
+  medellin_eod2025_results:
+    city: Medellin
+    kind: origin_destination_survey_aggregates
+    catalog: https://www.metropol.gov.co/Paginas/Noticias/Encuesta%20origen%20destino%202025.aspx
+    viewer: https://eod2025.metropol.gov.co/
+    required: false
+    notes: Recent aggregate results exportable from the official viewer; row-level microdata are not yet pinned.
+
   medellin_eod_trips:
     city: Medellin
     kind: origin_destination_survey
     catalog: https://datosabiertos.metropol.gov.co/dataset/encuesta-origen-destino-2017-datos-por-viajes
-    required: true
+    required: false
     discovery: dcat_json_with_direct_fallback
     url: https://datosabiertos.metropol.gov.co/sites/default/files/uploaded_resources/EOD_2017_DatosViajes_1_0.csv
-    notes: Official AMVA CSV; catalog metadata is checked before using the pinned fallback.
+    notes: Official 2017 AMVA microdata; retained as auxiliary historical evidence.
 
   medellin_eod_people:
     city: Medellin
     kind: origin_destination_survey
     catalog: https://datosabiertos.metropol.gov.co/dataset/encuesta-origen-destino-2017-datos-por-moradores
-    required: true
+    required: false
     discovery: dcat_json_with_direct_fallback
     url: https://datosabiertos.metropol.gov.co/sites/default/files/uploaded_resources/EOD_2017_DatosMoradores_0.csv
 
@@ -28,16 +52,16 @@ sources:
     city: Medellin
     kind: origin_destination_survey
     catalog: https://datosabiertos.metropol.gov.co/dataset/encuesta-origen-destino-2017-datos-por-hogares
-    required: true
+    required: false
     discovery: dcat_json_with_direct_fallback
     url: https://datosabiertos.metropol.gov.co/sites/default/files/uploaded_resources/EOD_2017_DatosHogares.csv
 
   medellin_gtfs_catalog:
     city: Medellin
     kind: gtfs
-    catalog: https://hub.arcgis.com/search?q=GTFS-Metro%20de%20Medell%C3%ADn
+    catalog: https://hub.arcgis.com/datasets/6480dbd3989d4fa19140129d06af460e
     required: false
-    notes: Use the latest official static Metro de Medellin item found during audit.
+    notes: Official Metro de Medellin static GTFS updated in February 2024.
 
   bogota_crashes:
     city: Bogota
@@ -56,4 +80,3 @@ sources:
     kind: street_network_and_poi
     catalog: https://www.openstreetmap.org/
     required: true
-
