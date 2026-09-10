@@ -5,6 +5,7 @@
 [![Relational OD gate](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/02_bogota_2023_relational_od_gate.ipynb)
 [![Resolution gate](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/03_bogota_2023_resolution_connectivity_gate.ipynb)
 [![Markov/FPT gate](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/04_bogota_2023_markov_fpt_gate.ipynb)
+[![Destination gate](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/05_bogota_2023_purpose_destination_gate.ipynb)
 
 Reproducible project for studying stochastic accessibility, first-passage
 times, and socioeconomic inequality in Colombian multimodal transport networks.
@@ -44,6 +45,9 @@ Waze history, and institutional agreements are not required for the core paper.
    Markov kernel, verifies ergodicity and spectral diagnostics, solves technical
    first-passage problems, and validates them against Monte Carlo simulation
    before attaching substantive service destinations (Gate 5).
+6. **05_bogota_2023_purpose_destination_gate.ipynb** classifies declared
+   trip purposes into employment, education, and health; audits duration and
+   spatial support; and predefines core and extended destination sets (Gate 6).
 
 Large source files are written under data/ and intentionally excluded from Git.
 Each run records URLs, timestamps, file sizes, and SHA-256 hashes.
