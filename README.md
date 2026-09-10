@@ -7,6 +7,7 @@
 [![Markov/FPT gate](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/04_bogota_2023_markov_fpt_gate.ipynb)
 [![Destination gate](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/05_bogota_2023_purpose_destination_gate.ipynb)
 [![Substantive FPT](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/06_bogota_2023_substantive_fpt.ipynb)
+[![Group FPT](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/07_bogota_2023_regularized_group_fpt.ipynb)
 
 Reproducible project for studying stochastic accessibility, first-passage
 times, and socioeconomic inequality in Colombian multimodal transport networks.
@@ -52,6 +53,9 @@ Waze history, and institutional agreements are not required for the core paper.
 7. **06_bogota_2023_substantive_fpt.ipynb** estimates first-passage
    distributions and expected accumulated travel-time rewards toward the
    accepted employment, education, and health destination sets (Gate 7).
+8. **07_bogota_2023_regularized_group_fpt.ipynb** estimates regularized
+   sex- and stratum-specific transition kernels, checks shrinkage sensitivity,
+   and obtains household-cluster bootstrap intervals for group FPT (Gate 8).
 
 Large source files are written under data/ and intentionally excluded from Git.
 Each run records URLs, timestamps, file sizes, and SHA-256 hashes.
