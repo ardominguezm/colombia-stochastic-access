@@ -4,6 +4,7 @@
 [![Schema gate](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/01_bogota_2023_schema_gate.ipynb)
 [![Relational OD gate](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/02_bogota_2023_relational_od_gate.ipynb)
 [![Resolution gate](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/03_bogota_2023_resolution_connectivity_gate.ipynb)
+[![Markov/FPT gate](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/04_bogota_2023_markov_fpt_gate.ipynb)
 
 Reproducible project for studying stochastic accessibility, first-passage
 times, and socioeconomic inequality in Colombian multimodal transport networks.
@@ -39,6 +40,10 @@ Waze history, and institutional agreements are not required for the core paper.
    UTAM transition networks using connectivity, effective edge support,
    bootstrap stability, and subgroup feasibility to select the primary
    inferential resolution (Gate 4).
+5. **04_bogota_2023_markov_fpt_gate.ipynb** builds the accepted UTAM
+   Markov kernel, verifies ergodicity and spectral diagnostics, solves technical
+   first-passage problems, and validates them against Monte Carlo simulation
+   before attaching substantive service destinations (Gate 5).
 
 Large source files are written under data/ and intentionally excluded from Git.
 Each run records URLs, timestamps, file sizes, and SHA-256 hashes.
