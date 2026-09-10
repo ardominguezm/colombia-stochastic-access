@@ -3,6 +3,7 @@
 [![Data gate](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/00_data_audit_and_pilot.ipynb)
 [![Schema gate](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/01_bogota_2023_schema_gate.ipynb)
 [![Relational OD gate](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/02_bogota_2023_relational_od_gate.ipynb)
+[![Resolution gate](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/03_bogota_2023_resolution_connectivity_gate.ipynb)
 
 Reproducible project for studying stochastic accessibility, first-passage
 times, and socioeconomic inequality in Colombian multimodal transport networks.
@@ -34,6 +35,10 @@ Waze history, and institutional agreements are not required for the core paper.
 3. **02_bogota_2023_relational_od_gate.ipynb** measures full-table key
    cardinalities and join/spatial coverage, then builds weighted ZAT-level OD
    matrices for the study region and Bogotá-internal trips (Gate 3).
+4. **03_bogota_2023_resolution_connectivity_gate.ipynb** compares ZAT and
+   UTAM transition networks using connectivity, effective edge support,
+   bootstrap stability, and subgroup feasibility to select the primary
+   inferential resolution (Gate 4).
 
 Large source files are written under data/ and intentionally excluded from Git.
 Each run records URLs, timestamps, file sizes, and SHA-256 hashes.
