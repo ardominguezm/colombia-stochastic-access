@@ -11,6 +11,7 @@
 [![Residence–mobility decomposition](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/08_bogota_2023_residence_mobility_decomposition.ipynb)
 [![Decomposition robustness](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/09_bogota_2023_decomposition_robustness.ipynb)
 [![Final inference](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/10_bogota_2023_final_inference_and_maps.ipynb)
+[![Scope sensitivity](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/11_bogota_region_scope_sensitivity.ipynb)
 
 Reproducible project for studying stochastic accessibility, first-passage
 times, and socioeconomic inequality in Colombian multimodal transport networks.
@@ -68,6 +69,9 @@ Waze history, and institutional agreements are not required for the core paper.
 11. **10_bogota_2023_final_inference_and_maps.ipynb** runs the 500-replicate
     household bootstrap for the primary specification, constructs simultaneous
     intervals, and maps origin-level contributions to the sex gap (Gate 11).
+12. **11_bogota_region_scope_sensitivity.ipynb** reconstructs an independent
+    Bogotá D.C.-internal kernel and destination sets, compares them with the
+    Bogotá–Region estimand, and audits municipality-of-origin influence (Gate 12).
 
 Large source files are written under data/ and intentionally excluded from Git.
 Each run records URLs, timestamps, file sizes, and SHA-256 hashes.
