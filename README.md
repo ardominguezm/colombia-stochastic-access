@@ -84,6 +84,12 @@ Waze history, and institutional agreements are not required for the core paper.
 Large source files are written under data/ and intentionally excluded from Git.
 Each run records URLs, timestamps, file sizes, and SHA-256 hashes.
 
+## Manuscript
+
+An initial EPJ Data Science Regular Article draft is available in
+[`paper/manuscript.tex`](paper/manuscript.tex), with its verified starter
+bibliography and a checklist of remaining submission tasks.
+
 ## Repository layout
 
 ```text
