@@ -9,6 +9,7 @@
 [![Substantive FPT](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/06_bogota_2023_substantive_fpt.ipynb)
 [![Group FPT](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/07_bogota_2023_regularized_group_fpt.ipynb)
 [![Residence–mobility decomposition](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/08_bogota_2023_residence_mobility_decomposition.ipynb)
+[![Decomposition robustness](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/09_bogota_2023_decomposition_robustness.ipynb)
 
 Reproducible project for studying stochastic accessibility, first-passage
 times, and socioeconomic inequality in Colombian multimodal transport networks.
@@ -60,6 +61,9 @@ Waze history, and institutional agreements are not required for the core paper.
 9. **08_bogota_2023_residence_mobility_decomposition.ipynb** decomposes group
    FPT gaps into residential composition, mobility-kernel, and interaction
    components using a joint household-cluster bootstrap (Gate 9).
+10. **09_bogota_2023_decomposition_robustness.ipynb** tests complete versus
+    category-valid references, core versus extended targets, and conditional
+    versus unconditional residential starts, with a sex-gap bootstrap (Gate 10).
 
 Large source files are written under data/ and intentionally excluded from Git.
 Each run records URLs, timestamps, file sizes, and SHA-256 hashes.
