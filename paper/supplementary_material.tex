@@ -1,0 +1,102 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{booktabs,longtable,graphicx,microtype}
+\usepackage{setspace,lineno,hyperref}
+\doublespacing
+\linenumbers
+
+\title{Supplementary material\\
+Metropolitan scope amplifies measured gender disparities in stochastic urban accessibility}
+\author{Andy Rafael Domínguez-Monterroza}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Supplementary methods}
+
+\subsection{Interpretation of the stochastic-accessibility estimand}
+The origin--destination Markov chain represents aggregate survey-weighted population
+flows. A first-passage step is a dimensionless transition in this fitted flow system and
+must not be interpreted as a minute of travel or as an observed individual's itinerary.
+For every purpose, residential distributions are conditioned on starting outside the
+corresponding target set in the primary specification.
+
+\subsection{Regularization sensitivity}
+Group-specific rows are shrunk toward the population kernel using
+$\omega_{ig}=\mathrm{ESS}_{ig}/(\mathrm{ESS}_{ig}+\tau)$. The primary value is
+$\tau=20$; values 10 and 50 were prespecified sensitivity checks. Table~\ref{tab:s1_tau}
+summarizes the maximum magnitude change and the minimum and median rank correlation of
+origin-specific FPT values relative to $\tau=20$.
+
+\input{supplementary/tables/table_s1_tau_sensitivity.tex}
+
+\subsection{Specification grid}
+The robustness grid crosses two reference populations (all survey-valid observations or
+only observations with valid categories for the analysed dimension), two target
+definitions (core 50\% and extended 80\% of supported weighted arrivals), and two
+residential conventions (outside-target conditioning or all residences). Across three
+purposes this yields 24 sex-gap specifications. These checks assess specification
+dependence; they were not used to select the primary result.
+
+\input{supplementary/tables/table_s2_robustness_ranges.tex}
+\input{supplementary/tables/table_s3_complete_robustness_grid.tex}
+
+\subsection{Bootstrap inference}
+The final regional analysis uses 500 joint Poisson(1) household-cluster bootstrap
+replicates. The same multiplier is assigned to every record from a household and is
+propagated jointly to person and trip weights. Simultaneous intervals use a bootstrap
+max-$t$ critical value over the three destination purposes within each effect family.
+The paired scope analysis likewise uses 500 shared household multipliers in the regional
+and district systems. The earlier 50-replicate specification grid and 200-replicate
+standalone district analysis are robustness diagnostics rather than the final paired
+inference.
+
+\section{Supplementary results}
+
+\subsection{Regional inference}
+\input{supplementary/tables/table_s4_regional_inference.tex}
+
+\subsection{District support and target reconstruction}
+The Bogotá D.C.-internal analysis retains the largest directed strongly connected
+component. Purpose-specific targets are reconstructed within the district scope rather
+than inherited from the regional system.
+
+\input{supplementary/tables/table_s5_district_support.tex}
+\input{supplementary/tables/table_s6_district_targets.tex}
+
+\subsection{Paired territorial-scope contrasts}
+Positive step-valued contrasts indicate a larger female-minus-male gap in the regional
+system. Relative attenuation is reported in percentage points. The scope comparison is
+descriptive and includes both network truncation and scope-specific opportunity
+geography.
+
+\input{supplementary/tables/table_s7_paired_scope_inference.tex}
+
+\subsection{Socioeconomic-stratum diagnostic}
+\input{supplementary/tables/table_s8_stratum_association.tex}
+
+\subsection{External-municipality attribution}
+Figure~\ref{fig:s1_municipal} reports additive origin-level contributions to the fitted
+regional mobility-kernel component. These values are not causal deletion effects and
+must not be interpreted as effects of removing or administratively integrating a
+municipality.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.96\textwidth]{figures/figure_3_external_municipality_kernel_contributions.png}
+\caption{External-municipality contributions to the regional mobility-kernel component.}
+\label{fig:s1_municipal}
+\end{figure}
+
+\section{Reproducibility and interpretation boundaries}
+All supplementary tables are generated from passed analytical gates without
+re-estimating the models. The analysis is cross-sectional and descriptive. Survey
+weights and clustered bootstrap inference propagate sampling uncertainty but do not
+remove recall error, nonresponse bias, unobserved modal and temporal heterogeneity, or
+the limited gender categories in the processed survey.
+
+\end{document}
