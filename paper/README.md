@@ -13,12 +13,16 @@ The current `article` class is intentionally portable. Before submission, migrat
   `paper/novelty_evidence_matrix.md`.
 - Notebook 14 builds the standalone supplement and runs the Gate 15 consistency audit.
 
+- Notebook 14 has been executed; the standalone supplement and all eight generated tables are versioned.
+- The manuscript and supplement compile successfully and have passed visual layout QA.
+- The detailed journal audit and unresolved submission decisions are tracked in
+  [SUBMISSION_CHECKLIST.md](SUBMISSION_CHECKLIST.md).
+
 ## Remaining finishing steps
 
-1. Execute notebook 14 and commit its generated LaTeX supplement and tables.
-2. Compile and visually inspect the manuscript and supplement with the real figures.
-3. Confirm authors, affiliations, funding, acknowledgements, and AI-use disclosure.
-4. Make the repository public or create an anonymized review archive as required.
-5. Archive the accepted analytical release in Zenodo and insert its DOI in the data/code availability statement.
+1. Resolve the author-dependent declarations, authorship, and AI-use wording listed in the submission checklist.
+2. Make the repository public or create an appropriate review archive.
+3. Archive the exact analytical release in a DOI-issuing repository and insert the persistent identifier.
+4. Prepare the cover letter and upload the editable source package.
 
 EPJ Data Science currently requests a 150--250 word abstract, 3--10 keywords, editable source files, sequentially cited tables/figures, and complete declarations.
