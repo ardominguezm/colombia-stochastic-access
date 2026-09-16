@@ -14,6 +14,7 @@
 [![Scope sensitivity](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/11_bogota_region_scope_sensitivity.ipynb)
 [![Paired scope inference](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/12_bogota_2023_paired_scope_inference.ipynb)
 [![Manuscript outputs](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/13_bogota_2023_manuscript_tables_figures.ipynb)
+[![Supplementary material](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/14_bogota_2023_supplementary_material.ipynb)
 
 Reproducible project for studying stochastic accessibility, first-passage
 times, and socioeconomic inequality in Colombian multimodal transport networks.
@@ -80,6 +81,9 @@ Waze history, and institutional agreements are not required for the core paper.
 14. **13_bogota_2023_manuscript_tables_figures.ipynb** freezes the validated
     estimates into publication-ready CSV/LaTeX tables, figures, and a concise
     analytical summary without re-estimating or selecting results (Gate 14).
+15. **14_bogota_2023_supplementary_material.ipynb** consolidates regularization,
+    specification, support, paired-inference, and stratum diagnostics into a
+    standalone supplementary package and runs the final consistency audit (Gate 15).
 
 Large source files are written under data/ and intentionally excluded from Git.
 Each run records URLs, timestamps, file sizes, and SHA-256 hashes.
