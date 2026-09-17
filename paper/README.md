@@ -8,7 +8,7 @@ The current `article` class is intentionally portable. Before submission, migrat
 
 ## Completed manuscript-package steps
 
-- Three verified publication figures are versioned in `paper/figures/`.
+- Five verified publication figures are versioned in `paper/figures/`, including the two Gate 16 multiscale figures.
 - The closest-literature audit and defensible novelty claim are recorded in
   `paper/novelty_evidence_matrix.md`.
 - Notebook 14 builds the standalone supplement and runs the Gate 15 consistency audit.
@@ -26,12 +26,15 @@ household-cluster bootstrap replicates. The manuscript and novelty matrix now in
 the supported positive boundary-response slopes and explicitly distinguish them from
 strict stepwise monotonicity.
 
+## Final submission audit
+
+Notebook 16 implements Gate 17. It checks frozen numerical claims against Gates 14–16, verifies figures, citations and cross-references, compiles both LaTeX documents, and creates page contact sheets for visual inspection. It must be executed once after the current manuscript revision.
+
 ## Remaining finishing steps
 
-1. Copy the two Gate 16 figures from Drive to `paper/figures/` and run the final Gates 14–16 manuscript consistency audit.
-2. Compile and visually inspect the revised manuscript and supplement with the multiscale figures.
-3. Resolve the author-dependent declarations, authorship, and AI-use wording listed in the submission checklist.
-4. Make the repository public or create an appropriate review archive, then archive the exact release in a DOI-issuing repository.
-5. Insert the persistent identifier, prepare the cover letter, and upload the editable source package.
+1. Execute notebook 16 and inspect the manuscript and supplement contact sheets.
+2. Select the final title and resolve the author-dependent declarations, authorship, and AI-use wording listed in the submission checklist.
+3. Make the repository public or create an appropriate review archive, then archive the exact release in a DOI-issuing repository.
+4. Insert the persistent identifier, prepare the cover letter, and upload the editable source package.
 
 EPJ Data Science currently requests a 150--250 word abstract, 3--10 keywords, editable source files, sequentially cited tables/figures, and complete declarations.
