@@ -17,6 +17,7 @@
 [![Supplementary material](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/14_bogota_2023_supplementary_material.ipynb)
 [![Multiscale boundary response](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/15_bogota_2023_multiscale_boundary_response.ipynb)
 [![Submission audit](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/16_bogota_2023_submission_consistency_audit.ipynb)
+[![Study-area map](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/17_bogota_2023_study_area_map.ipynb)
 
 Reproducible project for studying stochastic accessibility, first-passage
 times, and socioeconomic inequality in Colombian multimodal transport networks.
@@ -93,6 +94,9 @@ Waze history, and institutional agreements are not required for the core paper.
 17. **16_bogota_2023_submission_consistency_audit.ipynb** verifies frozen
     numerical claims, figures, citations, cross-references, and LaTeX compilation
     for the manuscript and supplement without re-estimating models (Gate 17).
+18. **17_bogota_2023_study_area_map.ipynb** builds the publication map from
+    official UTAM zoning and the Gate 16 nested territorial scopes, exporting
+    high-resolution raster and vector versions with a spatial audit (Gate 18).
 
 Large source files are written under data/ and intentionally excluded from Git.
 Each run records URLs, timestamps, file sizes, and SHA-256 hashes.
