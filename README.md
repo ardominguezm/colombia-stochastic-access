@@ -16,6 +16,7 @@
 [![Manuscript outputs](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/13_bogota_2023_manuscript_tables_figures.ipynb)
 [![Supplementary material](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/14_bogota_2023_supplementary_material.ipynb)
 [![Multiscale boundary response](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/15_bogota_2023_multiscale_boundary_response.ipynb)
+[![Submission audit](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/16_bogota_2023_submission_consistency_audit.ipynb)
 
 Reproducible project for studying stochastic accessibility, first-passage
 times, and socioeconomic inequality in Colombian multimodal transport networks.
@@ -89,6 +90,9 @@ Waze history, and institutional agreements are not required for the core paper.
     territorial scopes defined by Bogotá–external interface flows, reconstructs
     targets within each scope, and estimates paired household-bootstrap response
     curves, contrasts, and multiscale slopes (Gate 16).
+17. **16_bogota_2023_submission_consistency_audit.ipynb** verifies frozen
+    numerical claims, figures, citations, cross-references, and LaTeX compilation
+    for the manuscript and supplement without re-estimating models (Gate 17).
 
 Large source files are written under data/ and intentionally excluded from Git.
 Each run records URLs, timestamps, file sizes, and SHA-256 hashes.
