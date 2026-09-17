@@ -30,11 +30,15 @@ strict stepwise monotonicity.
 
 Notebook 16 implements Gate 17. It checks frozen numerical claims against Gates 14–16, verifies figures, citations and cross-references, compiles both LaTeX documents, and creates page contact sheets for visual inspection. It must be executed once after the current manuscript revision.
 
+## Study-area figure
+
+Notebook 17 builds the geographical study-area figure from the official UTAM zoning and the Gate 16 nested scope definitions. Gate 18 must be executed once; its PNG will then be versioned in `paper/figures/`.
+
 ## Remaining finishing steps
 
-1. Execute notebook 16 and inspect the manuscript and supplement contact sheets.
-2. Select the final title and resolve the author-dependent declarations, authorship, and AI-use wording listed in the submission checklist.
-3. Make the repository public or create an appropriate review archive, then archive the exact release in a DOI-issuing repository.
-4. Insert the persistent identifier, prepare the cover letter, and upload the editable source package.
+1. Execute notebook 17, inspect the map, and version its final PNG and PDF.
+2. Re-run notebook 16 after the map is versioned and inspect the updated manuscript contact sheet.
+3. Select the final title and resolve the author-dependent declarations, authorship, and AI-use wording listed in the submission checklist.
+4. Make the repository public or create an appropriate review archive, archive the exact release, insert the persistent identifier, and prepare the submission package.
 
 EPJ Data Science currently requests a 150--250 word abstract, 3--10 keywords, editable source files, sequentially cited tables/figures, and complete declarations.
