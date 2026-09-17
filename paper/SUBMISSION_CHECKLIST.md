@@ -18,11 +18,11 @@ Official sources:
 - [x] Abbreviations are defined and collected in a dedicated list.
 - [x] Required declaration headings are present.
 - [x] Tables are editable LaTeX, not embedded images.
-- [x] Figure captions are under 15 words and the analysis notebooks export figures as 300-dpi PNG files.
-- [x] Six manuscript figures are versioned, including the validated Gate 18 geographical study-area map.
-- [x] Supplementary material is cited and described as `Additional file 1 (.pdf)`.
+- [x] The analysis notebooks export the publication figures as 300-dpi PNG files.
+- [x] Six figures are inserted and cited in the main manuscript, including the validated Gate 18 geographical study-area map.
+- [x] Supplementary material is cited and described as `Additional file 1 (.pdf)`; it is table-only and contains nine tables.
 - [x] Main and supplementary LaTeX sources compile with pdfLaTeX.
-- [x] The prior five-figure manuscript passed visual QA with no clipping, overlapping text, hyperlink borders, or overfull boxes.
+- [x] The earlier manuscript and supplement build passed visual QA; the reorganized six-figure build remains subject to the final Gate 17 rerun.
 - [x] Analysis Gates 15 and 16 passed before preparation of the final manuscript package.
 - [x] Gate 18 passed and verified the study-area geometries, survey coverage, scope classification, and publication exports.
 

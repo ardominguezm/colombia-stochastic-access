@@ -8,11 +8,11 @@ The current `article` class is intentionally portable. Before submission, migrat
 
 ## Completed manuscript-package steps
 
-- Six verified publication figures are versioned in `paper/figures/`, including the two Gate 16 multiscale figures and the Gate 18 study-area map.
+- Six verified main-text figures are versioned in `paper/figures/`, including the two Gate 16 multiscale figures, the external-municipality attribution, and the Gate 18 study-area map.
 - The closest-literature audit and defensible novelty claim are recorded in
   `paper/novelty_evidence_matrix.md`.
 - Notebook 14 builds the standalone supplement and runs the Gate 15 consistency audit.
-- Notebook 14 has been executed; the standalone supplement and all eight generated tables are versioned.
+- Notebook 14 has been executed; the standalone table-only supplement contains nine tables, eight generated files plus the inline multiscale-slope table.
 - The manuscript and supplement compile successfully and have passed visual layout QA.
 - The detailed journal audit and unresolved submission decisions are tracked in
   [SUBMISSION_CHECKLIST.md](SUBMISSION_CHECKLIST.md).
