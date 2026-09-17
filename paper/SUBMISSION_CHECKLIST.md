@@ -1,6 +1,6 @@
 # EPJ Data Science submission checklist
 
-Audit date: 2026-09-16  
+Audit date: 2026-09-17  
 Article type: Regular Article
 
 Official sources:
@@ -18,14 +18,17 @@ Official sources:
 - [x] Abbreviations are defined and collected in a dedicated list.
 - [x] Required declaration headings are present.
 - [x] Tables are editable LaTeX, not embedded images.
-- [x] Figure captions are under 15 words and the notebook exports figures as 300-dpi PNG files.
+- [x] Figure captions are under 15 words and the analysis notebooks export figures as 300-dpi PNG files.
+- [x] Six manuscript figures are versioned, including the validated Gate 18 geographical study-area map.
 - [x] Supplementary material is cited and described as `Additional file 1 (.pdf)`.
 - [x] Main and supplementary LaTeX sources compile with pdfLaTeX.
-- [x] Final visual QA found no clipping, overlapping text, hyperlink borders, or overfull boxes.
-- [x] Analysis Gate 15 passed before preparation of the supplementary package.
+- [x] The prior five-figure manuscript passed visual QA with no clipping, overlapping text, hyperlink borders, or overfull boxes.
+- [x] Analysis Gates 15 and 16 passed before preparation of the final manuscript package.
+- [x] Gate 18 passed and verified the study-area geometries, survey coverage, scope classification, and publication exports.
 
 ## Must be resolved before submission
 
+- [ ] Rerun notebook 16 (Gate 17) and inspect the manuscript contact sheet after inclusion of the sixth figure.
 - [ ] Archive the exact release in a DOI-issuing repository (for example Zenodo) and replace the provisional repository sentence with the persistent DOI/URL.
 - [ ] Confirm whether funding is truly not applicable and remove `[Confirm before submission.]`.
 - [ ] Freeze the author list and remove `[Update if co-authors are added.]`; collect the full name, affiliation, and email of every co-author.
