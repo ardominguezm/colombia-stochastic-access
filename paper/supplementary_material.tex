@@ -46,6 +46,16 @@ dependence; they were not used to select the primary result.
 \input{supplementary/tables/table_s2_robustness_ranges.tex}
 \input{supplementary/tables/table_s3_complete_robustness_grid.tex}
 
+\subsection{Multiscale territorial construction}
+External municipalities are ranked by total bidirectional survey-weighted flow with
+Bogotá using the complete population. Nested functional scopes include the minimum
+ranked municipalities required to reach at least 50\% and 80\% of that interface flow.
+Together with Bogotá D.C. and the complete regional network, the realized interface
+shares are 0, 0.564, 0.824, and 1. Within every scope, the largest directed strongly
+connected component, population kernel, purpose targets, group kernels, and residential
+distributions are reconstructed. The full-region endpoint retains all 141 nodes in the
+validated regional kernel, including one node without a municipality label.
+
 \subsection{Bootstrap inference}
 The final regional analysis uses 500 joint Poisson(1) household-cluster bootstrap
 replicates. The same multiplier is assigned to every record from a household and is
@@ -76,6 +86,40 @@ descriptive and includes both network truncation and scope-specific opportunity
 geography.
 
 \input{supplementary/tables/table_s7_paired_scope_inference.tex}
+
+\subsection{Multiscale boundary response}
+The total female-minus-male gap is regressed on realized interface-flow coverage within
+each bootstrap replicate. Max-$t$ simultaneous intervals are formed across the three
+purposes separately for each decomposition component. Table~\ref{tab:s8_multiscale}
+reports the fitted slopes. Positive simultaneous intervals support an overall increasing
+response, but do not imply that every successive scope estimate is larger.
+
+\begin{table}[ht]
+\centering
+\caption{Multiscale boundary-response slopes per unit of Bogotá--external interface-flow coverage.}
+\label{tab:s8_multiscale}
+\begin{tabular}{lrrr}
+\toprule
+Purpose & Total gap & Residential & Mobility kernel \\
+\midrule
+Employment & 0.451 [0.161, 0.741] & -0.018 [-0.058, 0.023] & 0.469 [0.175, 0.762] \\
+Education  & 0.320 [0.024, 0.616] & -0.018 [-0.057, 0.021] & 0.338 [0.035, 0.641] \\
+Health     & 0.391 [0.052, 0.730] & -0.026 [-0.073, 0.022] & 0.417 [0.078, 0.755] \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Point-estimate monotonicity holds for employment but not for education or health.
+The corresponding bootstrap probabilities of a nondecreasing total-gap sequence are
+0.756, 0.110, and 0.212. The main inference is therefore the positive fitted response,
+not strict local monotonicity.
+
+\begin{figure}[ht]
+\centering
+\IfFileExists{figures/figure_boundary_response_decomposition.png}{\includegraphics[width=0.98\textwidth]{figures/figure_boundary_response_decomposition.png}}{\fbox{\parbox[c][5cm][c]{0.9\textwidth}{\centering Copy figure\_boundary\_response\_decomposition.png from Gate 16 to paper/figures/.}}}
+\caption{Multiscale decomposition of the territorial boundary response.}
+\label{fig:s2_multiscale}
+\end{figure}
 
 \subsection{Socioeconomic-stratum diagnostic}
 \input{supplementary/tables/table_s8_stratum_association.tex}
