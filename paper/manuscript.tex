@@ -39,6 +39,15 @@ We use the processed microdata and 2023 zoning files from the official Bogotá--
 
 Spatial units are Urban Transport Analysis Units (UTAMs). The regional transition network contains 141 nodes. Bogotá D.C. contains 116 zoned UTAMs; the largest directed strongly connected component contains 114 nodes, 100\% of the internal trip weight, and 99.78\% of the eligible residential weight. The analysis uses the sex categories reported in the survey (women and men). Results should not be generalized to identities not represented by these categories.
 
+Figure~\ref{fig:study-area} shows the complete survey geography and the nested territorial scopes used in the multiscale analysis. External municipalities are classified according to the cumulative share of bidirectional survey-weighted flow that they exchange with Bogotá, using the full population before any subgroup comparison.
+
+\begin{figure}[ht]
+\centering
+\IfFileExists{figures/figure_study_area_multiscale_scopes.png}{\includegraphics[width=0.94\textwidth]{figures/figure_study_area_multiscale_scopes.png}}{\fbox{\parbox[c][7cm][c]{0.88\textwidth}{\centering Generate figure\_study\_area\_multiscale\_scopes.png with notebook 17 and copy it to paper/figures/.}}}
+\caption{Study area and nested territorial scopes in the Bogotá--Region Household Mobility Survey. Bogotá D.C. forms the administrative core; Soacha reaches the functional 50\% threshold; Mosquera, Chía, Funza, and Cota extend coverage beyond 80\% of observed Bogotá--external interface flow; the remaining municipalities complete the regional system. Thin internal lines show UTAM boundaries.}
+\label{fig:study-area}
+\end{figure}
+
 \subsection{Purpose-specific opportunity sets}
 Trip purposes were harmonized into employment, education, and health. For each purpose and territorial scope, destination UTAMs were ranked by weighted arrivals after requiring at least five sampled trips and an effective sample size of at least three. The primary target set is the smallest ranked set reaching 50\% of supported weighted arrivals (the \emph{core-50} definition). The district target sets contain 24 employment, 24 education, and 17 health UTAMs. Because targets are reconstructed inside each scope, the scope contrast captures the complete change in the measured mobility system, including its opportunity geography.
 
