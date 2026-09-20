@@ -1,13 +1,39 @@
-\begin{table}
-\caption{Sensitivity of group FPT estimates to the regularization parameter.}
+\begin{table}[ht]
+\centering
+\caption{Sensitivity to the row-shrinkage parameter. Panel A reports the main point estimands after complete re-estimation at each value of $\tau$. $G_D$ and $G_R$ are the female-minus-male gaps for Bogotá D.C. and Bogotá--Region; $\Delta G=G_R-G_D$, with analogous paired contrasts for the residential ($\Delta R$) and kernel ($\Delta K$) components. $\Delta G_{\mathrm{rel}}$ is expressed in percentage points. Panel B reports origin-level FPT changes and rank agreement relative to the primary $\tau=20$ specification.}
 \label{tab:s1_tau}
+
+\textit{Panel A: scope-gap estimands}\\[2pt]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{rlrrrrrr}
+\toprule
+$\tau$ & Purpose & $G_D$ & $G_R$ & $\Delta G$ & $\Delta R$ & $\Delta K$ & $\Delta G_{\mathrm{rel}}$ (pp) \\
+\midrule
+0  & Employment & 0.521 & 1.078 & 0.557 & -0.022 & 0.579 & 9.81 \\
+0  & Education  & 0.440 & 0.908 & 0.468 & -0.023 & 0.491 & 8.16 \\
+0  & Health     & 0.256 & 0.753 & 0.497 & -0.030 & 0.527 & 6.43 \\
+10 & Employment & 0.499 & 1.037 & 0.538 & -0.022 & 0.560 & 9.52 \\
+10 & Education  & 0.418 & 0.866 & 0.448 & -0.023 & 0.470 & 7.84 \\
+10 & Health     & 0.249 & 0.729 & 0.481 & -0.030 & 0.510 & 6.21 \\
+20 & Employment & 0.479 & 0.999 & 0.520 & -0.022 & 0.542 & 9.24 \\
+20 & Education  & 0.399 & 0.827 & 0.429 & -0.022 & 0.451 & 7.54 \\
+20 & Health     & 0.240 & 0.705 & 0.465 & -0.030 & 0.495 & 6.02 \\
+50 & Employment & 0.428 & 0.900 & 0.472 & -0.022 & 0.494 & 8.47 \\
+50 & Education  & 0.350 & 0.730 & 0.380 & -0.022 & 0.402 & 6.75 \\
+50 & Health     & 0.218 & 0.641 & 0.423 & -0.029 & 0.453 & 5.50 \\
+\bottomrule
+\end{tabular}%
+}
+
+\vspace{0.8em}
+\textit{Panel B: origin-level FPT diagnostics relative to $\tau=20$}\\[2pt]
 \begin{tabular}{rrrr}
 \toprule
-Tau & Max. absolute change & Min. Spearman & Median Spearman \\
+$\tau$ & Max. absolute change & Min. Spearman & Median Spearman \\
 \midrule
-10.000 & 0.078 & 0.949 & 0.989 \\
-20.000 & 0.000 & 1.000 & 1.000 \\
-50.000 & 0.103 & 0.971 & 0.990 \\
+10 & 0.078 & 0.949 & 0.989 \\
+20 & 0.000 & 1.000 & 1.000 \\
+50 & 0.103 & 0.971 & 0.990 \\
 \bottomrule
 \end{tabular}
 \end{table}
