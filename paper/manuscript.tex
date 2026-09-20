@@ -83,7 +83,13 @@ where $Q^{(g,A)}$ is the transient submatrix of $P^{(g)}$. Let $\mu^{(g)}$ be th
 Larger values indicate more expected mobility transitions before reaching the opportunity set and hence lower stochastic accessibility.
 
 \subsection{Residence--kernel decomposition}
-For women ($w$) and men ($m$), the total gap is $G=M^{(w,A)}-M^{(m,A)}$. We use a symmetric two-factor decomposition:
+For women ($w$) and men ($m$), the total gap is $G=M^{(w,A)}-M^{(m,A)}$. To distinguish a change in the gap from a general change in the FPT scale, we also report the descriptive normalized gap
+\begin{equation}
+ G_{\mathrm{rel}}=
+ \frac{M^{(w,A)}-M^{(m,A)}}
+ {\{M^{(w,A)}+M^{(m,A)}\}/2}.
+\end{equation}
+Inference is based on the prespecified absolute gap $G$; $G_{\mathrm{rel}}$ is used as a scale-comparability diagnostic. We use a symmetric two-factor decomposition:
 \begin{align}
  R &= \tfrac12(\mu^w-\mu^m)^\top(h^w+h^m),\\
  K &= \tfrac12(\mu^w+\mu^m)^\top(h^w-h^m),
@@ -108,6 +114,26 @@ Sampling uncertainty is estimated with a joint Poisson(1) household-cluster boot
 \section{Results}
 \subsection{Gender gaps within each territorial scope}
 In Bogotá--Region, the female-minus-male mean FPT gap was 0.999 steps for employment (simultaneous 95\% confidence interval [0.632, 1.366]), 0.827 for education [0.451, 1.204], and 0.705 for health [0.252, 1.159]. The corresponding Bogotá D.C.-internal estimates were 0.479 [0.289, 0.669], 0.399 [0.173, 0.624], and 0.240 [-0.046, 0.527]. Thus, the sign is consistent across all point estimates, although the district health gap does not exclude zero after family-wise correction.
+
+Table~\ref{tab:fpt-levels} reports the group-specific levels underlying these differences. After normalization by the two-group mean FPT, the employment gap increased from 12.4\% within Bogotá D.C. to 21.7\% in Bogotá--Region. The corresponding changes were from 10.0\% to 17.5\% for education and from 4.7\% to 10.7\% for health. The regional amplification therefore remains present on the relative scale and is not solely a consequence of higher overall FPT levels. These normalized quantities are descriptive diagnostics and are not assigned the confidence intervals of the absolute gaps.
+
+\begin{table}[ht]
+\centering
+\caption{Group-specific mean FPT levels and female-minus-male gaps on absolute and normalized scales. Relative gaps divide the absolute gap by the two-group mean FPT.}
+\label{tab:fpt-levels}
+\begin{tabular}{llrrrr}
+\toprule
+Scope & Purpose & Men & Women & Absolute gap & Relative gap (\%) \\
+\midrule
+Bogotá D.C. & Employment & 3.616 & 4.095 & 0.479 & 12.4 \\
+Bogotá--Region & Employment & 4.111 & 5.110 & 0.999 & 21.7 \\
+Bogotá D.C. & Education & 3.789 & 4.187 & 0.399 & 10.0 \\
+Bogotá--Region & Education & 4.306 & 5.133 & 0.827 & 17.5 \\
+Bogotá D.C. & Health & 5.045 & 5.285 & 0.240 & 4.7 \\
+Bogotá--Region & Health & 6.257 & 6.963 & 0.705 & 10.7 \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 The residential contribution was close to zero in every scope-purpose combination and all of its simultaneous intervals included zero. In contrast, the mobility-kernel contribution closely reproduced the total gap. Figure~\ref{fig:scope} summarizes the scope-specific estimates.
 
@@ -160,7 +186,7 @@ Among external municipalities, Facatativá had the largest positive kernel contr
 \end{figure}
 
 \section{Discussion}
-The results support a simple but consequential empirical conclusion: an administrative definition of Bogotá captures substantially less measured gender inequality than the functional regional mobility system. This extends prior evidence on accessibility inequities in the Bogotá city-region \citep{guzman2017} by showing that territorial scope changes the estimated gender gap itself, not only aggregate accessibility levels. It also complements research on mobility barriers and multimodal segregation \citep{pinter2025,yang2026}: here the boundary is treated as a paired change in the stochastic-accessibility estimand, with uncertainty propagated from the same sampled households in both scopes. The paired design shows that the female--male gap is attenuated by approximately one-half for employment and education and by roughly two-thirds for health when the analysis is restricted to Bogotá D.C. The four-scope response strengthens this endpoint comparison: all three purpose-specific slopes are positive after family-wise correction. At the same time, the intermediate education and health estimates show that metropolitan expansion need not produce a locally monotone sequence, so the result concerns the overall response across prespecified nested scopes rather than a universal law of boundary growth.
+The results support a simple but consequential empirical conclusion: an administrative definition of Bogotá captures substantially less measured gender inequality than the functional regional mobility system. This extends prior evidence on accessibility inequities in the Bogotá city-region \citep{guzman2017} by showing that territorial scope changes the estimated gender gap itself, not only aggregate accessibility levels. It also complements research on mobility barriers and multimodal segregation \citep{pinter2025,yang2026}: here the boundary is treated as a paired change in the stochastic-accessibility estimand, with uncertainty propagated from the same sampled households in both scopes. The paired design shows that the female--male gap is attenuated by approximately one-half for employment and education and by roughly two-thirds for health when the analysis is restricted to Bogotá D.C. As a descriptive scale check, the relative gaps also increase from the district to the regional system for all three purposes, so the endpoint result is not explained solely by an increase in the overall FPT level. The four-scope response strengthens this endpoint comparison: all three purpose-specific slopes are positive after family-wise correction. At the same time, the intermediate education and health estimates show that metropolitan expansion need not produce a locally monotone sequence, so the result concerns the overall response across prespecified nested scopes rather than a universal law of boundary growth.
 
 The decomposition clarifies the mechanism represented by the model. Women and men have similar weighted residential starting distributions after conditioning on each target set, but their estimated transition kernels generate different first-passage times. Regional peripheral origins contribute disproportionately to this kernel contrast despite representing smaller residential masses. This pattern is compatible with gendered differences in trip purpose, mobility diversity, mode use, and constraints documented in Colombia and other urban systems \citep{macedo2020,macedo2022,battiston2023}. The present analysis adds that these disparities may be understated when the network is truncated at the central city's boundary.
 
