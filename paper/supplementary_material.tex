@@ -28,10 +28,15 @@ corresponding target set in the primary specification.
 
 \subsection{Regularization sensitivity}
 Group-specific rows are shrunk toward the population kernel using
-$\omega_{ig}=\mathrm{ESS}_{ig}/(\mathrm{ESS}_{ig}+\tau)$. The primary value is
-$\tau=20$; values 10 and 50 were prespecified sensitivity checks. Table~\ref{tab:s1_tau}
-summarizes the maximum magnitude change and the minimum and median rank correlation of
-origin-specific FPT values relative to $\tau=20$.
+$\omega_{ig}=\mathrm{ESS}_{ig}/(\mathrm{ESS}_{ig}+\tau)$. The primary analysis uses
+$\tau=20$. We re-estimated both territorial systems at $\tau\in\{0,10,20,50\}$.
+At $\tau=0$, origins with positive group-specific support use the empirical row, whereas
+origins without such support retain the population row so that the transition kernel
+remains defined. Table~\ref{tab:s1_tau} reports the total gap, its paired scope contrast,
+the corresponding residential and kernel contrasts, and the normalized-gap contrast.
+It also retains the origin-level magnitude and rank diagnostics relative to $\tau=20$.
+These are point-estimate sensitivity calculations; inferential intervals in the main
+analysis correspond to the primary $\tau=20$ specification.
 
 \input{supplementary/tables/table_s1_tau_sensitivity.tex}
 
