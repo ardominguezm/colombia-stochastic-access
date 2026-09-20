@@ -67,7 +67,7 @@ be the effective sample size of trips leaving origin $i$. Sparse rows are regula
  (1-\omega^{(g)}_i)P^{(0)}_{ij},\qquad
  \omega^{(g)}_i=\frac{\operatorname{ESS}^{(g)}_i}{\operatorname{ESS}^{(g)}_i+\tau},
 \end{equation}
-with preregistered primary value $\tau=20$. The Markov chain is a model of aggregate population flows. A transition sequence is not interpreted as an observed individual's itinerary.
+with primary value $\tau=20$. The Markov chain is a model of aggregate population flows. A transition sequence is not interpreted as an observed individual's itinerary.
 
 \subsection{First-passage accessibility}
 For target set $A$, let $T_A=\inf\{t\geq0:X_t\in A\}$. The vector of mean first-passage times $h^{(g,A)}$ is zero on $A$ and satisfies
@@ -149,6 +149,8 @@ The regional-minus-district gap was 0.520 steps for employment (simultaneous 95\
 
 Kernel contrasts were likewise positive for employment (0.542 [0.217, 0.866]), education (0.451 [0.108, 0.794]), and health (0.495 [0.136, 0.853]). Residential contrasts were small and their intervals included zero. The increase in the measured gap at regional scale is therefore associated with transition dynamics rather than with a detectable change in the female--male residential composition contrast (Figure~\ref{fig:contrast}).
 
+This conclusion was stable in point-estimate sensitivity analyses over $\tau\in\{0,10,20,50\}$. The regional-minus-district total-gap contrast ranged from 0.472 to 0.557 steps for employment, from 0.380 to 0.468 for education, and from 0.423 to 0.497 for health. Kernel contrasts remained positive throughout, residential contrasts remained small, and all regional-minus-district relative-gap contrasts were positive. These calculations assess point-estimate sensitivity; the simultaneous intervals refer to the primary $\tau=20$ specification (Additional file 1, Table~S1).
+
 \begin{figure}[ht]
 \centering
 \IfFileExists{figures/figure_2_paired_scope_amplification.png}{\includegraphics[width=0.9\textwidth]{figures/figure_2_paired_scope_amplification.png}}{\fbox{\parbox[c][5cm][c]{0.85\textwidth}{\centering Copy figure\_2\_paired\_scope\_amplification.png from Gate 14 to paper/figures/.}}}
@@ -187,6 +189,8 @@ Among external municipalities, Facatativá had the largest positive kernel contr
 
 \section{Discussion}
 The results support a simple but consequential empirical conclusion: an administrative definition of Bogotá captures substantially less measured gender inequality than the functional regional mobility system. This extends prior evidence on accessibility inequities in the Bogotá city-region \citep{guzman2017} by showing that territorial scope changes the estimated gender gap itself, not only aggregate accessibility levels. It also complements research on mobility barriers and multimodal segregation \citep{pinter2025,yang2026}: here the boundary is treated as a paired change in the stochastic-accessibility estimand, with uncertainty propagated from the same sampled households in both scopes. The paired design shows that the female--male gap is attenuated by approximately one-half for employment and education and by roughly two-thirds for health when the analysis is restricted to Bogotá D.C. As a descriptive scale check, the relative gaps also increase from the district to the regional system for all three purposes, so the endpoint result is not explained solely by an increase in the overall FPT level. The four-scope response strengthens this endpoint comparison: all three purpose-specific slopes are positive after family-wise correction. At the same time, the intermediate education and health estimates show that metropolitan expansion need not produce a locally monotone sequence, so the result concerns the overall response across prespecified nested scopes rather than a universal law of boundary growth.
+
+The stability of the paired contrast across the shrinkage range indicates that metropolitan amplification is not an artifact of the primary regularization value. The magnitude decreases as stronger pooling brings the sex-specific kernels closer to the population kernel, but the sign and component-level interpretation are unchanged.
 
 The decomposition clarifies the mechanism represented by the model. Women and men have similar weighted residential starting distributions after conditioning on each target set, but their estimated transition kernels generate different first-passage times. Regional peripheral origins contribute disproportionately to this kernel contrast despite representing smaller residential masses. This pattern is compatible with gendered differences in trip purpose, mobility diversity, mode use, and constraints documented in Colombia and other urban systems \citep{macedo2020,macedo2022,battiston2023}. The present analysis adds that these disparities may be understated when the network is truncated at the central city's boundary.
 
