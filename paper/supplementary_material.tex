@@ -41,12 +41,15 @@ analysis correspond to the primary $\tau=20$ specification.
 \input{supplementary/tables/table_s1_tau_sensitivity.tex}
 
 \subsection{Specification grid}
-The robustness grid crosses two reference populations (all survey-valid observations or
-only observations with valid categories for the analysed dimension), two target
-definitions (core 50\% and extended 80\% of supported weighted arrivals), and two
-residential conventions (outside-target conditioning or all residences). Across three
-purposes this yields 24 sex-gap specifications. These checks assess specification
-dependence; they were not used to select the primary result.
+The effective robustness grid crosses two target definitions (core 50\% and extended
+80\% of supported weighted arrivals) and two residential conventions (outside-target
+conditioning or all residences) across three purposes, yielding 12 specifications.
+An initial audit also reconstructed the population reference using only observations
+with valid sex categories. Valid-category coverage was nearly complete, and estimates
+differed from the full-population reference only below the reported precision. We
+therefore retain the full-population reference and do not count the practically duplicate
+rows as additional specifications. These checks assess specification dependence; they
+were not used to select the primary result.
 
 \input{supplementary/tables/table_s2_robustness_ranges.tex}
 \input{supplementary/tables/table_s3_complete_robustness_grid.tex}
@@ -120,7 +123,22 @@ The corresponding bootstrap probabilities of a nondecreasing total-gap sequence 
 not strict local monotonicity.
 
 \subsection{Socioeconomic-stratum diagnostic}
+The stratum diagnostic uses six ordered socioeconomic strata. Consequently, the
+Spearman statistic has discrete support, and percentile interval endpoints may coincide
+with the observed coefficient when estimates approach $-1$ or $1$.
+
 \input{supplementary/tables/table_s9_stratum_association.tex}
+
+\subsection{Paired specification-grid sensitivity}
+The regional-minus-district contrast was recalculated for the same 12 effective
+target-definition and conditioning combinations. All total-gap, kernel-component, and
+relative-gap contrasts remained positive. Magnitudes were nevertheless
+specification-dependent: the smallest employment and education contrasts occurred when
+the extended 80\% target was combined with all residences. These are point-estimate
+diagnostics and do not inherit the simultaneous confidence intervals of the primary
+specification.
+
+\input{supplementary/tables/table_s10_paired_specification_grid.tex}
 
 \section{Reproducibility and interpretation boundaries}
 All supplementary tables are generated from passed analytical gates without
