@@ -140,6 +140,24 @@ specification.
 
 \input{supplementary/tables/table_s10_paired_specification_grid.tex}
 
+\subsection{Full municipal omission and sample support}
+As a sensitivity diagnostic distinct from fixed-kernel origin attribution, each of the
+20 external municipalities is omitted in turn. We remove its UTAMs, all incident
+survey trips, and its residents; then reconstruct the largest directed strongly
+connected component, population kernel, sex-specific kernels, residential
+distributions, and purpose-specific core-50 targets. The Bogotá D.C. reference
+remains fixed. A regional UTAM without a municipality label is retained in
+all fits. All 20 refits and the unmodified 141-node regional baseline pass the
+reconstruction checks. Facatativá and Soacha have respectively 229 and 1,449
+sampled outbound households; their female/male outbound trip effective sample
+sizes are 299/241 and 2,246/1,944. These support statistics describe the
+available sample and do not quantify uncertainty in the refitted contrasts.
+Table~\ref{tab:s11_municipality_refit} gives the ranges and the two most
+relevant named examples. This diagnostic redefines the network and target
+geography and is neither a paired bootstrap test nor a causal deletion effect.
+
+\input{supplementary/tables/table_s11_full_municipality_refit.tex}
+
 \section{Reproducibility and interpretation boundaries}
 All supplementary tables are generated from passed analytical gates without
 re-estimating the models. The analysis is cross-sectional and descriptive. Survey
