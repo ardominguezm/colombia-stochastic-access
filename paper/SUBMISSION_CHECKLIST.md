@@ -1,45 +1,34 @@
-# EPJ Data Science submission checklist
+# EPJ Data Science submission status
 
-Audit date: 2026-09-17  
-Article type: Regular Article
+Review snapshot: 2026-09-21. The files in `paper/` are the consolidated
+post-Gate-23 version; see `REVIEW_RELEASE.md`.
 
-Official sources:
+## Completed for internal review
 
-- [Submission guidelines](https://link.springer.com/journal/13688/submission-guidelines)
-- [Regular Article requirements](https://link.springer.com/journal/13688/submission-guidelines/regular-article)
+- [x] Seven full-resolution main-text figures are numbered and cited in order.
+- [x] Figure 7 separates FPT steps, reachable-share percentage points, and
+  exploratory target-reselection intervals, with their differing uncertainty
+  definitions explained in the caption.
+- [x] The standalone supplement includes Tables S1–S13 and is cited from the
+  manuscript.
+- [x] Main and supplement compile with pdfLaTeX with real figures, bibliography,
+  and tables; resulting PDFs passed visual inspection.
+- [x] The plotted Figure 7 inputs and plotting script are versioned alongside
+  its 300-dpi PNG and vector PDF.
 
-## Verified in the repository
+## Author decisions required before submission
 
-- [x] Editable LaTeX main manuscript and bibliography are present.
-- [x] Double spacing, line numbering, and page numbering are enabled.
-- [x] The title page identifies the corresponding author and institutional affiliation.
-- [x] The abstract contains 207 words, within the required 150--250 range.
-- [x] Six keywords are supplied, within the required range of 3--10.
-- [x] Abbreviations are defined and collected in a dedicated list.
-- [x] Required declaration headings are present.
-- [x] Tables are editable LaTeX, not embedded images.
-- [x] The analysis notebooks export the publication figures as 300-dpi PNG files.
-- [x] Six figures are inserted and cited in the main manuscript, including the validated Gate 18 geographical study-area map.
-- [x] Supplementary material is cited and described as `Additional file 1 (.pdf)`; it is table-only and contains nine tables.
-- [x] Main and supplementary LaTeX sources compile with pdfLaTeX.
-- [x] The earlier manuscript and supplement build passed visual QA; the reorganized six-figure build remains subject to the final Gate 17 rerun.
-- [x] Analysis Gates 15 and 16 passed before preparation of the final manuscript package.
-- [x] Gate 18 passed and verified the study-area geometries, survey coverage, scope classification, and publication exports.
-
-## Must be resolved before submission
-
-- [ ] Rerun notebook 16 (Gate 17) and inspect the manuscript contact sheet after inclusion of the sixth figure.
-- [ ] Archive the exact release in a DOI-issuing repository (for example Zenodo) and replace the provisional repository sentence with the persistent DOI/URL.
-- [ ] Confirm whether funding is truly not applicable and remove `[Confirm before submission.]`.
-- [ ] Freeze the author list and remove `[Update if co-authors are added.]`; collect the full name, affiliation, and email of every co-author.
-- [ ] Confirm acknowledgements and remove `[Update before submission.]`.
-- [ ] Revise the generative-AI disclosure to match the final workflow and place the required disclosure in the Methods section or another journal-approved location.
-- [ ] Prepare a cover letter explaining journal fit, policy issues, competing interests, author approval, and exclusive submission.
-- [ ] Decide whether to suggest or exclude reviewers and, if used, collect institutional emails or persistent identifiers.
-- [ ] Confirm the applicable article-processing charge, institutional agreement, waiver, or funding route at the time of submission.
-- [ ] Upload all editable LaTeX sources, bibliography, figure files, and Additional file 1 through the submission system.
-- [ ] Perform one clean compile under a TeX Live 2021-compatible environment before upload.
-
-## Scientific positioning check
-
-EPJ Data Science states that purely descriptive applications of standard methods are unlikely to be considered. The cover letter and abstract should therefore foreground the paper's methodological contribution: a paired territorial-scope estimand, regularized group-specific mobility kernels, residence--kernel decomposition, and joint household-bootstrap inference, together with the new behavioral result that administrative truncation systematically attenuates measured gender inequality.
+- [ ] Freeze author list, affiliations, correspondence, contributions, and
+  confirm that all authors approve the submission.
+- [ ] Verify the funding and acknowledgments statements and remove all
+  bracketed author prompts from the manuscript.
+- [ ] Review the description and placement of the AI-use disclosure against
+  the journal's current policy and actual workflow.
+- [ ] Make a legally distributable exact code snapshot publicly accessible,
+  archive it with a persistent DOI, and update the data/code availability text.
+- [ ] Confirm current EPJ Data Science template and submission requirements;
+  migrate the portable article layout if required.
+- [ ] Prepare the cover letter and complete journal form declarations;
+  confirm submission rights and any article-processing charge arrangement.
+- [ ] Perform a clean compile of the final uploaded source and inspect the two
+  PDFs one last time after these author-dependent edits.
