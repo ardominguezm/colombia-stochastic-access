@@ -98,6 +98,15 @@ Waze history, and institutional agreements are not required for the core paper.
     official UTAM zoning and the Gate 16 nested territorial scopes, exporting
     high-resolution raster and vector versions with a spatial audit (Gate 18).
 
+19. **22_bogota_2023_decisive_validation.ipynb** runs one decision experiment
+    for the remaining methodological reviewer concerns: a pooled travel-time
+    accessibility benchmark (45/60 minutes) on validated purpose targets, a
+    home-origin sex-kernel sensitivity, and a reduced paired bootstrap that
+    reselects targets. The notebook reproduces Gate 11/12 point estimates before
+    proceeding and writes one decision card to `results/gate23`. Execute once
+    and inspect the card before revising the manuscript. Gates and positive
+    signs are technical or descriptive diagnostics, not a publication verdict.
+
 Large source files are written under data/ and intentionally excluded from Git.
 Each run records URLs, timestamps, file sizes, and SHA-256 hashes.
 
