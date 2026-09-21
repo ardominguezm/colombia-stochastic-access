@@ -158,6 +158,50 @@ geography and is neither a paired bootstrap test nor a causal deletion effect.
 
 \input{supplementary/tables/table_s11_full_municipality_refit.tex}
 
+\subsection{One-run reviewer validation: time-access benchmark and home-origin kernels}
+A fixed-time comparator was built on the same directed UTAM networks and
+scope-specific core-50 purpose sets as the primary analysis. Survey-weighted
+mean positive reported minutes provide edge costs; shortest directed
+travel-time paths determine which destinations are reachable within 45 or
+60 minutes. Each destination's weight is its share of supported pooled
+weighted arrivals for the purpose and scope. For each sex, the score is
+averaged over the original survey-weighted residential distribution
+conditional on starting outside the target set. The female disadvantage is
+defined as male minus female reachable-arrival share. Its paired regional
+contrast uses the same fixed time surfaces for women and men within each
+scope. A 500-replicate shared Poisson household bootstrap reweights only
+the residential distributions, conditional on the estimated edge costs
+and targets; Table~\ref{tab:s12_time_home} gives unadjusted percentile
+intervals. This is a conventional time-threshold \emph{proxy} based on
+revealed OD edges and arrivals, not an inventory of opportunities or a
+complete route-choice model. It lacks a sex-specific movement kernel by
+construction and cannot be compared numerically to FPT steps.
+
+A separate check identifies home-origin trips when a trip starts in its
+household's residence UTAM. The full-population reference kernel,
+connected network, destinations, and residential distributions stay fixed;
+only the sex-specific empirical trip rows and their effective sample
+sizes change. All trip records were assigned to households with a unique
+residential UTAM. The pooled weighted share of home-origin trips was
+0.623. Table~\ref{tab:s12_time_home} also reports the resulting FPT
+point contrasts. They do not inherit intervals from the primary model.
+
+\input{supplementary/tables/table_s12_time_access_and_home_origin.tex}
+
+\subsection{Paired bootstrap with reselected targets}
+In 150 exploratory shared Poisson household replicates, we compared the
+regional-minus-district FPT contrast under the fixed primary target sets
+and under newly selected supported core-50 targets inside each replicate.
+The original strongly connected components and population shrinkage
+kernels were retained; sampled residential masses and sex-specific
+transition row weights and effective sample sizes varied in both variants.
+Table~\ref{tab:s13_reselected_targets} gives percentile intervals
+from identical resamples, allowing a direct comparison of widths.
+They are not simultaneous intervals, and the smaller run does not replace
+the primary 500-replicate max-$t$ inference.
+
+\input{supplementary/tables/table_s13_reselected_target_bootstrap.tex}
+
 \section{Reproducibility and interpretation boundaries}
 All supplementary tables are generated from passed analytical gates without
 re-estimating the models. The analysis is cross-sectional and descriptive. Survey
