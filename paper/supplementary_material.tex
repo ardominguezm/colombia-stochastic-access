@@ -10,7 +10,7 @@
 \linenumbers
 
 \title{Supplementary material\\
-Metropolitan scope amplifies measured gender disparities in stochastic urban accessibility}
+Urban boundaries and gender gaps in stochastic accessibility: Evidence from Bogot\'a}
 \author{Andy Rafael Domínguez-Monterroza}
 \date{}
 
@@ -45,12 +45,10 @@ analysis correspond to the primary $\tau=20$ specification.
 The effective robustness grid crosses two target definitions (core 50\% and extended
 80\% of supported weighted arrivals) and two residential conventions (outside-target
 conditioning or all residences) across three purposes, yielding 12 specifications.
-An initial audit also reconstructed the population reference using only observations
-with valid sex categories. Valid-category coverage was nearly complete, and estimates
-differed from the full-population reference only below the reported precision. We
-therefore retain the full-population reference and do not count the practically duplicate
-rows as additional specifications. These checks assess specification dependence; they
-were not used to select the primary result.
+The reference kernel uses the complete survey population. Restricting its construction
+to records with valid sex categories changes the displayed estimates by less than the
+reported precision. Tables~\ref{tab:s2_ranges} and~\ref{tab:s3_grid} report the 12
+distinct full-population specifications.
 
 \input{supplementary/tables/table_s2_robustness_ranges.tex}
 \input{supplementary/tables/table_s3_complete_robustness_grid.tex}
@@ -77,7 +75,9 @@ inference.
 
 \section{Supplementary results}
 
-\subsection{Regional inference}
+\subsection{Regional gap estimates}
+Table~\ref{tab:s4_region} reports the regional gaps and their household-bootstrap
+intervals for each purpose.
 \input{supplementary/tables/table_s4_regional_inference.tex}
 
 \subsection{District support and target reconstruction}
@@ -90,9 +90,9 @@ than inherited from the regional system.
 
 \subsection{Paired territorial-scope contrasts}
 Positive step-valued contrasts indicate a larger female-minus-male gap in the regional
-system. Relative attenuation is reported in percentage points. The scope comparison is
-descriptive and includes both network truncation and scope-specific opportunity
-geography.
+system. Relative attenuation is expressed as a percentage of the regional gap, as
+reported in Table~\ref{tab:s7_paired}. The scope contrast combines changes in the
+network, opportunity geography, and residential population.
 
 \input{supplementary/tables/table_s7_paired_scope_inference.tex}
 
@@ -159,7 +159,7 @@ geography and is neither a paired bootstrap test nor a causal deletion effect.
 
 \input{supplementary/tables/table_s11_full_municipality_refit.tex}
 
-\subsection{One-run reviewer validation: time-access benchmark and home-origin kernels}
+\subsection{Time-threshold benchmark and home-origin kernels}
 A fixed-time comparator was built on the same directed UTAM networks and
 scope-specific core-50 purpose sets as the primary analysis. Survey-weighted
 mean positive reported minutes provide edge costs; shortest directed
@@ -180,7 +180,7 @@ construction and cannot be compared numerically to FPT steps.
 
 A separate check identifies home-origin trips when a trip starts in its
 household's residence UTAM. The full-population reference kernel,
-connected network, destinations, and residential distributions stay fixed;
+connected network, destinations, and residential distributions are held fixed;
 only the sex-specific empirical trip rows and their effective sample
 sizes change. All trip records were assigned to households with a unique
 residential UTAM. The pooled weighted share of home-origin trips was
@@ -203,10 +203,38 @@ the primary 500-replicate max-$t$ inference.
 
 \input{supplementary/tables/table_s13_reselected_target_bootstrap.tex}
 
+\subsection{Network, target, and resident-population accounting}
+Let $G_D$ denote the district gap among residents of the 114 district UTAMs in the
+largest strongly connected component, evaluated on the district network and its
+core-50 destination set. Let $G_{RC}$ use the regional transition kernels with the
+same residents and district destinations, $G_{RT}$ use regional kernels and
+destinations with the same residents, and $G_R$ include all eligible regional
+residents and regional destinations. Within each state, women's and men's
+residential weights are normalized after excluding the respective destination set.
+The ordered identity is
+\begin{equation}
+G_R-G_D=(G_{RC}-G_D)+(G_{RT}-G_{RC})+(G_R-G_{RT}).
+\end{equation}
+The first term retains the district's starting population and targets while
+changing the fitted transition system; the second changes the target geography;
+the third expands the residential population. The decomposition is an accounting
+identity for this order of comparisons. Its terms do not represent independent
+causal effects, and a different order could allocate interactions differently.
+
+The same Poisson(1) household multiplier is used in all four states within each
+of 500 replicates. The network components, population reference kernels, and
+core-50 destination sets are fixed at their full-sample definitions. Max-$t$
+intervals are simultaneous across the three purposes for each term separately.
+The original district and regional point estimates are recovered, and the three
+contributions sum to their regional-minus-district difference in every replicate.
+Table~\ref{tab:s14_boundary_mechanism} reports the four contrasts.
+
+\input{supplementary/tables/table_s14_boundary_mechanism.tex}
+
 \section{Reproducibility and interpretation boundaries}
-Tables S1--S11 summarize validated primary analyses and sensitivity checks;
-Tables S12--S13 summarize the separate Gate 23 model comparisons and reduced
-paired bootstrap. The corresponding analyses and inputs are documented in
+Tables S1--S11 report the primary analyses and model sensitivities; Tables S12--S14
+report the time-access benchmark, target-selection sensitivity, and ordered
+territorial accounting. Analysis code and input definitions are documented in
 the repository. The analysis is cross-sectional and descriptive. Survey
 weights and clustered bootstrap inference propagate sampling uncertainty but do not
 remove recall error, nonresponse bias, unobserved modal and temporal heterogeneity, or

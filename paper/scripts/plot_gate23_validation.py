@@ -116,5 +116,6 @@ ax.legend(frameon=False, loc="upper right", fontsize=8, handlelength=2.1,
 path = OUTPUT / "figure_7_validation_diagnostics"
 fig.savefig(path.with_suffix(".png"), dpi=300, facecolor="white")
 fig.savefig(path.with_suffix(".pdf"), facecolor="white")
+fig.savefig(path.with_suffix(".eps"), facecolor="white")
 plt.close(fig)
 print(path.with_suffix(".png"))

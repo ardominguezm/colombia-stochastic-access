@@ -1,34 +1,16 @@
-# EPJ Data Science submission status
+# Computers, Environment and Urban Systems: submission preparation
 
-Review snapshot: 2026-09-21. The files in `paper/` are the consolidated
-post-Gate-23 version; see `REVIEW_RELEASE.md`.
+## Verified in this candidate
 
-## Completed for internal review
+- [x] Eight main-text figures cited and embedded; Tables S1–S14 in the standalone supplement.
+- [x] Ordered territorial accounting reports separate changes in network, targets, and population, with simultaneous intervals for each three-purpose family.
+- [x] Eight-figure PDF/PNG/EPS export notebook and output manifest prepared; raster and vector origins identified.
+- [x] Manuscript and supplement compiled cleanly with pdfLaTeX and checked visually.
 
-- [x] Seven full-resolution main-text figures are numbered and cited in order.
-- [x] Figure 7 separates FPT steps, reachable-share percentage points, and
-  exploratory target-reselection intervals, with their differing uncertainty
-  definitions explained in the caption.
-- [x] The standalone supplement includes Tables S1–S13 and is cited from the
-  manuscript.
-- [x] Main and supplement compile with pdfLaTeX with real figures, bibliography,
-  and tables; resulting PDFs passed visual inspection.
-- [x] The plotted Figure 7 inputs and plotting script are versioned alongside
-  its 300-dpi PNG and vector PDF.
+## Final author checks
 
-## Author decisions required before submission
-
-- [ ] Freeze author list, affiliations, correspondence, contributions, and
-  confirm that all authors approve the submission.
-- [ ] Verify the funding and acknowledgments statements and remove all
-  bracketed author prompts from the manuscript.
-- [ ] Review the description and placement of the AI-use disclosure against
-  the journal's current policy and actual workflow.
-- [ ] Make a legally distributable exact code snapshot publicly accessible,
-  archive it with a persistent DOI, and update the data/code availability text.
-- [ ] Confirm current EPJ Data Science template and submission requirements;
-  migrate the portable article layout if required.
-- [ ] Prepare the cover letter and complete journal form declarations;
-  confirm submission rights and any article-processing charge arrangement.
-- [ ] Perform a clean compile of the final uploaded source and inspect the two
-  PDFs one last time after these author-dependent edits.
+- [ ] Confirm title, author list, affiliations, contributions, correspondence, funding, AI-use disclosure, and agreement of all authors.
+- [ ] Inspect all exported figure files from the full-precision Gate 24 CSV, especially resolution and EPS compatibility with the journal production workflow.
+- [ ] Publish a legally distributable exact code and processed-output snapshot with a persistent DOI; update the availability statement. Link restricted survey microdata to its official source.
+- [ ] Check current journal scope, template, word limits, figure rules, article fees, and cover letter requirements before uploading.
+- [ ] Recompile the final source after author edits, then inspect proofs and complete the journal declarations.

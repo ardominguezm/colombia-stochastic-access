@@ -1,32 +1,21 @@
-# Consolidated EPJ Data Science review candidate
+# Bogotá manuscript and supplement: publication candidate
 
-This directory is the single review snapshot following Gate 23. The manuscript is
-`manuscript.tex` (compiled as `manuscript.pdf`); Additional file 1 is
-`supplementary_material.tex` (compiled as `supplementary_material.pdf`). The
-main text contains seven numbered figures in `figures/`. The supplement has
-13 numbered tables, S1–S13, and no figures. The new Figure 7 is generated with
-`python scripts/plot_gate23_validation.py` using the frozen values in
-`figure_data/gate23_figure_data.csv`. The primary Figure 7 intervals are the
-Gate 13 simultaneous intervals; Gate 23 provides the comparator estimates,
-home-origin estimates, and exploratory target-selection intervals. The panels
-use different estimands, units, and bootstrap definitions.
+The manuscript is `manuscript.tex` (`manuscript.pdf`); Additional file 1 is `supplementary_material.tex` (`supplementary_material.pdf`). The main text has eight numbered figures in `figures/`. The supplement contains fourteen tables, S1–S14, and no figures. The primary paired bootstrap and the independent 500-replicate ordered mechanism bootstrap have distinct interval families; Figure 8 and Table S14 report the latter.
 
-Compile from this directory with:
+To regenerate the last two figures:
+
+```bash
+python scripts/plot_gate23_validation.py
+python scripts/plot_gate24_boundary_mechanism.py
+```
+
+The archived Figure 8 coordinates are rounded to four decimals. The Colab notebook `../notebooks/24_bogota_publication_figures_all_formats.ipynb` regenerates it from the exact Gate 24 intervals CSV on Drive and exports all eight images in three formats. Figures 1–6 remain raster based in PDF/EPS; their source generation notebooks are the route to truly vector output if a journal requires it.
+
+Compile in `paper/`:
 
 ```bash
 latexmk -pdf -interaction=nonstopmode -halt-on-error manuscript.tex
 latexmk -pdf -interaction=nonstopmode -halt-on-error supplementary_material.tex
 ```
 
-The compiled snapshot was visually checked with all seven embedded figure files;
-the supplement was checked with Tables S1–S13. Both compilation logs have no
-undefined references, float-size warnings, or overfull boxes. These PDFs are
-review candidates and must not be represented as submitted or accepted.
-
-Before journal submission, the author needs to confirm the author list and
-affiliations, funding, acknowledgments, and the AI-use disclosure; replace
-the provisional data/code availability statement with a public persistent
-archive DOI; prepare the cover letter and any required journal declarations;
-and confirm the current Springer Nature template and submission instructions.
-The private GitHub repository alone is not a public data/code availability
-archive. Survey microdata should remain referenced by their official source.
+This is a manuscript candidate, not a submitted paper. Author identification, licensing, public reproducibility archive, declarations, and journal formatting require final author review.
