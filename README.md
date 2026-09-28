@@ -1,147 +1,99 @@
-# Stochastic Accessibility in Colombian Cities
+# Mobility networks, territorial boundaries, and sex-based gaps in stochastic urban accessibility: evidence from Bogotá
 
-[![Data gate](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/00_data_audit_and_pilot.ipynb)
-[![Schema gate](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/01_bogota_2023_schema_gate.ipynb)
-[![Relational OD gate](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/02_bogota_2023_relational_od_gate.ipynb)
-[![Resolution gate](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/03_bogota_2023_resolution_connectivity_gate.ipynb)
-[![Markov/FPT gate](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/04_bogota_2023_markov_fpt_gate.ipynb)
-[![Destination gate](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/05_bogota_2023_purpose_destination_gate.ipynb)
-[![Substantive FPT](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/06_bogota_2023_substantive_fpt.ipynb)
-[![Group FPT](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/07_bogota_2023_regularized_group_fpt.ipynb)
-[![Residence–mobility decomposition](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/08_bogota_2023_residence_mobility_decomposition.ipynb)
-[![Decomposition robustness](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/09_bogota_2023_decomposition_robustness.ipynb)
-[![Final inference](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/10_bogota_2023_final_inference_and_maps.ipynb)
-[![Scope sensitivity](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/11_bogota_region_scope_sensitivity.ipynb)
-[![Paired scope inference](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/12_bogota_2023_paired_scope_inference.ipynb)
-[![Manuscript outputs](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/13_bogota_2023_manuscript_tables_figures.ipynb)
-[![Supplementary material](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/14_bogota_2023_supplementary_material.ipynb)
-[![Multiscale boundary response](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/15_bogota_2023_multiscale_boundary_response.ipynb)
-[![Submission audit](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/16_bogota_2023_submission_consistency_audit.ipynb)
-[![Study-area map](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/17_bogota_2023_study_area_map.ipynb)
+[![Status: submitted](https://img.shields.io/badge/status-submitted-blue)](#publication-status)
+[![Journal: CEUS](https://img.shields.io/badge/journal-Computers%2C%20Environment%20and%20Urban%20Systems-4c78a8)](#publication-status)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](pyproject.toml)
 
-Reproducible project for studying stochastic accessibility, first-passage
-times, and socioeconomic inequality in Colombian multimodal transport networks.
+Reproducibility repository for a study of territorial boundaries and sex-disaggregated stochastic accessibility in Bogotá and its surrounding municipalities.
 
-## Research question
+## Publication status
 
-How do conclusions about access to essential services change when route
-uncertainty, transfers, and the full first-passage-time distribution are
-considered instead of only shortest paths?
+**Submitted to _Computers, Environment and Urban Systems_ on 28 September 2026.**
 
-## Study design
+This repository accompanies the manuscript:
 
-Bogotá is the primary inferential case because its 2023 Mobility Survey
-publishes row-level household, person, trip, stage, weight, and zoning data.
-Medellín is retained as an external validation case using recent EOD 2025
-macrozone results, current network information, and 2017 microdata only for
-clearly labeled auxiliary analyses.
+> Andy Rafael Domínguez-Monterroza. “Mobility networks, territorial boundaries, and sex-based gaps in stochastic urban accessibility: evidence from Bogotá.”
 
-The project uses public data only; smart-card records, mobile-phone traces,
-Waze history, and institutional agreements are not required for the core paper.
+The manuscript is under peer review. Results and documentation may be updated in response to editorial or reviewer comments. A versioned archival DOI will be added after the public release is deposited.
 
-## Notebooks
+## Study overview
 
-1. **00_data_audit_and_pilot.ipynb** validates the initial public sources,
-   builds two small OSM networks, and tests the first-passage machinery.
-2. **01_bogota_2023_schema_gate.ipynb** downloads the Bogotá 2023 processed
-   survey and zoning packages, inventories their contents, confirms the
-   published relational keys, and evaluates analytical Gate 2.
-3. **02_bogota_2023_relational_od_gate.ipynb** measures full-table key
-   cardinalities and join/spatial coverage, then builds weighted ZAT-level OD
-   matrices for the study region and Bogotá-internal trips (Gate 3).
-4. **03_bogota_2023_resolution_connectivity_gate.ipynb** compares ZAT and
-   UTAM transition networks using connectivity, effective edge support,
-   bootstrap stability, and subgroup feasibility to select the primary
-   inferential resolution (Gate 4).
-5. **04_bogota_2023_markov_fpt_gate.ipynb** builds the accepted UTAM
-   Markov kernel, verifies ergodicity and spectral diagnostics, solves technical
-   first-passage problems, and validates them against Monte Carlo simulation
-   before attaching substantive service destinations (Gate 5).
-6. **05_bogota_2023_purpose_destination_gate.ipynb** classifies declared
-   trip purposes into employment, education, and health; audits duration and
-   spatial support; and predefines core and extended destination sets (Gate 6).
-7. **06_bogota_2023_substantive_fpt.ipynb** estimates first-passage
-   distributions and expected accumulated travel-time rewards toward the
-   accepted employment, education, and health destination sets (Gate 7).
-8. **07_bogota_2023_regularized_group_fpt.ipynb** estimates regularized
-   sex- and stratum-specific transition kernels, checks shrinkage sensitivity,
-   and obtains household-cluster bootstrap intervals for group FPT (Gate 8).
-9. **08_bogota_2023_residence_mobility_decomposition.ipynb** decomposes group
-   FPT gaps into residential composition, mobility-kernel, and interaction
-   components using a joint household-cluster bootstrap (Gate 9).
-10. **09_bogota_2023_decomposition_robustness.ipynb** tests complete versus
-    category-valid references, core versus extended targets, and conditional
-    versus unconditional residential starts, with a sex-gap bootstrap (Gate 10).
-11. **10_bogota_2023_final_inference_and_maps.ipynb** runs the 500-replicate
-    household bootstrap for the primary specification, constructs simultaneous
-    intervals, and maps origin-level contributions to the sex gap (Gate 11).
-12. **11_bogota_region_scope_sensitivity.ipynb** reconstructs an independent
-    Bogotá D.C.-internal kernel and destination sets, compares them with the
-    Bogotá–Region estimand, and audits municipality-of-origin influence (Gate 12).
-13. **12_bogota_2023_paired_scope_inference.ipynb** applies shared household
-    bootstrap multipliers to both territorial scopes and estimates simultaneous
-    intervals for regional-minus-district gap amplification (Gate 13).
-14. **13_bogota_2023_manuscript_tables_figures.ipynb** freezes the validated
-    estimates into publication-ready CSV/LaTeX tables, figures, and a concise
-    analytical summary without re-estimating or selecting results (Gate 14).
-15. **14_bogota_2023_supplementary_material.ipynb** consolidates regularization,
-    specification, support, paired-inference, and stratum diagnostics into a
-    standalone supplementary package and runs the final consistency audit (Gate 15).
-16. **15_bogota_2023_multiscale_boundary_response.ipynb** evaluates four nested
-    territorial scopes defined by Bogotá–external interface flows, reconstructs
-    targets within each scope, and estimates paired household-bootstrap response
-    curves, contrasts, and multiscale slopes (Gate 16).
-17. **16_bogota_2023_submission_consistency_audit.ipynb** verifies frozen
-    numerical claims, figures, citations, cross-references, and LaTeX compilation
-    for the manuscript and supplement without re-estimating models (Gate 17).
-18. **17_bogota_2023_study_area_map.ipynb** builds the publication map from
-    official UTAM zoning and the Gate 16 nested territorial scopes, exporting
-    high-resolution raster and vector versions with a spatial audit (Gate 18).
+The analysis uses the public **2023 Bogotá–Region Household Mobility Survey** to estimate survey-weighted mobility transition kernels at the UTAM level. First-passage times to employment, education, and health destination sets measure the expected number of aggregate mobility transitions required to reach relevant opportunities.
 
-19. **22_bogota_2023_decisive_validation.ipynb** runs one decision experiment
-    for the remaining methodological reviewer concerns: a pooled travel-time
-    accessibility benchmark (45/60 minutes) on validated purpose targets, a
-    home-origin sex-kernel sensitivity, and a reduced paired bootstrap that
-    reselects targets. The notebook reproduces Gate 11/12 point estimates before
-    proceeding and writes one decision card to `results/gate23`. Execute once
-    and inspect the card before revising the manuscript. Gates and positive
-    signs are technical or descriptive diagnostics, not a publication verdict.
+The workflow compares Bogotá D.C. with the complete Bogotá–Region system and with two intermediate functional scopes. It includes:
 
-Large source files are written under data/ and intentionally excluded from Git.
-Each run records URLs, timestamps, file sizes, and SHA-256 hashes.
+- effective-sample-size regularization of sex-specific transition rows;
+- female-minus-male stochastic-accessibility gaps;
+- a residence–kernel decomposition within each territorial scope;
+- paired household-cluster bootstrap inference;
+- multiscale territorial-boundary sensitivity;
+- municipality-omission and target-definition diagnostics;
+- time-threshold and home-origin sensitivity checks; and
+- ordered accounting of network, destination, and resident-population changes.
 
-## Manuscript
+First-passage transitions are dimensionless movements in an aggregate fitted flow system. They are not minutes of travel or observed individual itineraries. All comparisons are descriptive and do not identify causal effects of administrative boundaries.
 
-An initial EPJ Data Science Regular Article draft is available in
-[`paper/manuscript.tex`](paper/manuscript.tex), with its verified starter
-bibliography and a checklist of remaining submission tasks.
+## Data
+
+The source microdata and zoning files are publicly available from the Bogotá Mobility Observatory. They are not redistributed in this repository. Large downloaded files and restricted intermediate data remain excluded from version control.
+
+See:
+
+- [Data sources](docs/data_sources.md)
+- [Data dictionary](docs/data_dictionary.md)
+- [Research design](docs/research_design.md)
+- [Source registry](config/data_sources.yml)
+
+## Reproducible workflow
+
+The notebooks are numbered in dependency order.
+
+| Stage | Notebooks | Purpose |
+|---|---|---|
+| Data and network validation | 00–05 | Source audit, relational joins, spatial resolution, connectivity, Markov/FPT validation, and destination construction |
+| Primary estimation | 06–12 | Purpose-specific FPT, regularized group kernels, decomposition, robustness, final inference, and paired district–region comparison |
+| Reporting and spatial analysis | 13–17 | Publication tables, supplementary outputs, multiscale response, consistency audit, and study-area map |
+| Extended sensitivity analyses | 18–23 | Relative gaps, shrinkage sensitivity, specification grid, municipal influence, decisive validation, and ordered territorial accounting |
+| Figure export | 24 | Publication figures in PNG, PDF, and EPS formats |
+
+Open any notebook directly in Google Colab from the [`notebooks/`](notebooks/) directory. Notebooks 01 and 02 allow manual upload of the official survey archive when the source server blocks automated downloads.
 
 ## Repository layout
 
 ```text
 config/                 Public source registry
-data/                   Downloaded data (not versioned)
-docs/                   Research design and data notes
-notebooks/              Colab notebooks
-outputs/                 Generated tables and figures
-src/stochastic_access/  Reusable Markov-chain and inequality functions
+data/                   Downloaded data and caches (not versioned)
+docs/                   Data and methodological documentation
+notebooks/              Executable Colab workflow, numbered 00–24
+outputs/figures/         Versioned publication figures
+src/stochastic_access/  Reusable Markov-chain and accessibility functions
 tests/                   Unit tests
 ```
 
-## Reproduce locally
+## Local installation
 
 ```bash
+git clone https://github.com/ardominguezm/colombia-stochastic-access.git
+cd colombia-stochastic-access
 python -m pip install -r requirements.txt
 python -m pytest -q
 ```
 
-## Current scope
+The principal workflow was executed in Google Colab. Local execution may require manually downloading the official survey files into the paths documented by the notebooks.
 
-The project estimates *potential stochastic accessibility*. It does not claim
-to reconstruct individual trajectories, real-time congestion, or causal
-infrastructure effects.
+## Reproducibility notes
+
+- Household identifiers define the resampling clusters.
+- Shared Poisson(1) household multipliers preserve paired territorial comparisons.
+- Network components, reference kernels, and target sets are held fixed where specified by each inferential procedure.
+- Generated numerical results are frozen before manuscript-table and figure construction.
+- The repository intentionally excludes the manuscript source while the article is under review.
+
+## Citation
+
+Until an archival DOI is available, cite the software repository using [`CITATION.cff`](CITATION.cff). After publication, the article citation and archival DOI will replace this provisional reference.
 
 ## License
 
-Code is released under the MIT License. Each external dataset retains its own
-license and attribution requirements.
+Code is released under the [MIT License](LICENSE). External datasets retain their original licenses and attribution requirements.

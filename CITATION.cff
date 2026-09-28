@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the accompanying manuscript and this software."
+title: "Reproducibility package for Mobility networks, territorial boundaries, and sex-based gaps in stochastic urban accessibility: evidence from Bogotá"
+type: software
+version: 1.0.0
+date-released: 2026-09-28
+authors:
+  - family-names: "Domínguez-Monterroza"
+    given-names: "Andy Rafael"
+    affiliation: "Pontificia Universidad Javeriana"
+repository-code: "https://github.com/ardominguezm/colombia-stochastic-access"
+license: MIT
+keywords:
+  - stochastic accessibility
+  - urban mobility
+  - first-passage time
+  - territorial boundaries
+  - spatial interaction
+  - Bogotá
