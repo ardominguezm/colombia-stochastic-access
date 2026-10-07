@@ -64,6 +64,8 @@ The origin-specific accessibility-gap map can be reproduced and customised direc
 
 [![Open notebook 25 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/25_bogota_origin_specific_sex_gap_map.ipynb)
 
+Notebook 25 reads the frozen Gate 11 CSV and zoning archive from Drive. If Drive cannot be mounted, it requests both files together through Colab's upload dialog and automatically downloads the completed figure bundle.
+
 ## Repository layout
 
 ```text
