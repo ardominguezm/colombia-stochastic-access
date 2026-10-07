@@ -56,8 +56,13 @@ The notebooks are numbered in dependency order.
 | Reporting and spatial analysis | 13–17 | Publication tables, supplementary outputs, multiscale response, consistency audit, and study-area map |
 | Extended sensitivity analyses | 18–23 | Relative gaps, shrinkage sensitivity, specification grid, municipal influence, decisive validation, and ordered territorial accounting |
 | Figure export | 24 | Publication figures in PNG, PDF, and EPS formats |
+| Spatial interpretation | 25 | Origin-specific female-minus-male FPT maps for employment, education, and health |
 
 Open any notebook directly in Google Colab from the [`notebooks/`](notebooks/) directory. Notebooks 01 and 02 allow manual upload of the official survey archive when the source server blocks automated downloads.
+
+The origin-specific accessibility-gap map can be reproduced and customised directly in Colab:
+
+[![Open notebook 25 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/25_bogota_origin_specific_sex_gap_map.ipynb)
 
 ## Repository layout
 
@@ -65,7 +70,7 @@ Open any notebook directly in Google Colab from the [`notebooks/`](notebooks/) d
 config/                 Public source registry
 data/                   Downloaded data and caches (not versioned)
 docs/                   Data and methodological documentation
-notebooks/              Executable Colab workflow, numbered 00–24
+notebooks/              Executable Colab workflow, numbered 00–25
 outputs/figures/         Versioned publication figures
 src/stochastic_access/  Reusable Markov-chain and accessibility functions
 tests/                   Unit tests
