@@ -1,21 +1,10 @@
-# Stochastic urban accessibility across territorial boundaries: Sex-based gaps in Bogotá
+# Territorial boundaries and sex-based gaps in stochastic accessibility: A network analysis of the Bogotá city-region
 
-[![Status: submitted](https://img.shields.io/badge/status-submitted-blue)](#publication-status)
-[![Journal: EPJ Data Science](https://img.shields.io/badge/journal-EPJ%20Data%20Science-4c78a8)](#publication-status)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](pyproject.toml)
 
 Reproducibility repository for a study of territorial boundaries and sex-based stochastic accessibility in Bogotá and its surrounding municipalities.
 
-## Publication status
-
-**Submitted to _EPJ Data Science_ in October 2026.**
-
-This repository accompanies the manuscript:
-
-> Andy Rafael Domínguez-Monterroza. “Stochastic urban accessibility across territorial boundaries: Sex-based gaps in Bogotá.”
-
-The manuscript is under peer review. Results and documentation may be updated in response to editorial or reviewer comments.
 
 ## Study overview
 
@@ -59,13 +48,7 @@ The notebooks are numbered in dependency order.
 | Figure export | 24 | Publication figures in PNG, PDF, and EPS formats |
 | Spatial interpretation | 25 | Origin-specific female-minus-male FPT maps for employment, education, and health |
 
-Open any notebook directly in Google Colab from the [`notebooks/`](notebooks/) directory. Notebooks 01 and 02 allow manual upload of the official survey archive when the source server blocks automated downloads.
 
-The origin-specific accessibility-gap map can be reproduced and customised directly in Colab:
-
-[![Open notebook 25 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ardominguezm/colombia-stochastic-access/blob/main/notebooks/25_bogota_origin_specific_sex_gap_map.ipynb)
-
-Notebook 25 reads the frozen Gate 11 CSV and zoning archive from Drive. If Drive cannot be mounted, it requests both files together through Colab's upload dialog and automatically downloads the completed figure bundle.
 
 ## Repository layout
 
